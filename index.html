@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mashup Masterpieces</title>
+  <link href="style.css" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-200">
+  <header class="bg-orange-500 text-white px-4 py-2 flex justify-between items-center">
+    <a href="/">
+      <h1>Mashup Masterpieces</h1>
+    </a>
+  </header>
+  <section class="search px-4 py-4 flex flex-col gap-4 sm:flex-row sm:gap-2">
+    <select id="genre1" class="w-full border rounded-md px-3 py-2 sm:w-1/2"></select>
+    <select id="genre2" class="w-full border rounded-md px-3 py-2 sm:w-1/2"></select>
+    <button type="button" id="mash-button" class="bg-yellow-500 text-white hover:bg-green-700 px-4 py-2 rounded-md sm:w-1/3">Mash Up!</button>
+    <button type="button" id="mix-button" class="bg-red-500 text-white hover:bg-violet-700 px-4 py-2 rounded-md sm:w-1/3">Mix Up!</button>
+  </section>
+  <section class="results px-4 py-4 grid grid-cols-1 sm:grid-cols-2 gap-4">
+    <!-- Search results will be added here -->
+  </section>
+  <section class="details bg-white shadow-md rounded-md px-4 py-6 mx-4 mt-4 hidden">
+    <!-- Details of selected book will be added here -->
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
